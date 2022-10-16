@@ -106,7 +106,7 @@ let factorial = 1;
 for (let i = 1; i <= 6; i++) {
     factorial = factorial * i;
 }
-console.log(factorial);
+// console.log(factorial);
 
 // fibonacci sequence
 
@@ -118,7 +118,37 @@ console.log(factorial);
 let fibo = [0,1];
 for( let i = 2; i<=5; i++){
     fibo[i] = fibo[i-1] + fibo[i-2]
+    // console.log(fibo);
 }
 
-console.log(fibo);
 
+
+// largest Element of array
+
+function largestNumber(numbers){
+    let largest = numbers[0];
+    for(let i = 0; i< numbers.length; i++){
+        const element = numbers[i]
+        // console.log(element);
+        if(element > largest){
+            largest = element;
+        }
+    }
+    return largest;
+}
+
+const ages = [45,23,54,65,90];
+const oldages = largestNumber(ages)
+// console.log(oldages);
+
+const array = [23,4,5,24,67,8];
+for(let i = 0; i < array.length; i++){
+    const element = array[i];
+    if( element % 2 == 1){
+        continue;
+    }
+    else{
+        console.log(element)
+    }
+    
+}
