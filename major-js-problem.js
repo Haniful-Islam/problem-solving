@@ -188,12 +188,12 @@ for (var counter = 1; counter <= 100; counter++) {
 }
 
 // ## duplicate item remove to array
-const age = [44,22,43,25,98,56,22,98,57];
-function removeDublicateItem(numbers){
+const age = [44, 22, 43, 25, 98, 56, 22, 98, 57];
+function removeDublicateItem(numbers) {
     let unique = [];
-    for(const element of numbers){
+    for (const element of numbers) {
         // console.log(element);
-        if(unique.indexOf(element) == -1){
+        if (unique.indexOf(element) == -1) {
             unique.push(element);
         }
     }
@@ -207,7 +207,7 @@ console.log(removeItem);
 // chair = 3cft
 // table = 10cft
 // bed = 50cft
-function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
+function woodCalculator(chairQuantity, tableQuantity, bedQuantity) {
     const perwoodchair = 3;
     const tablewoodchair = 10;
     const bedwoodchair = 50;
@@ -218,5 +218,20 @@ function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
     return totalwood;
 
 }
-const output = woodCalculator(1,2,5);
-console.log(output);
+const output = woodCalculator(1, 2, 5);
+// console.log(output);
+
+// ## reverse String program
+
+let haappines = 'How Are You';
+function reverseString(reverse) {
+    let reverseletter = "";
+    for (let i = 0; i < reverse.length; i++) {
+        const element = reverse[i];
+        reverseletter = element + reverseletter;
+
+    }
+    return reverseletter;
+}
+ const reverseOutput = reverseString(haappines);
+ console.log(reverseOutput);
