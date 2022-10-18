@@ -42,9 +42,25 @@
 
 
 // ##inche to feet
-function incheToFeet(inche) {
-    let feet = inche / 12;
-    return feet;
+// function incheToFeet(inche) {
+//     let feet = inche / 12;
+//     return feet;
+// }
+// const feetOutput = incheToFeet(156);
+// console.log(feetOutput);
+
+// ##fahrenheit to celsius program
+
+function cTof(fahrenhiet){
+    let celsius = (5/9) * (fahrenhiet - 32);
+    return celsius;
 }
-const feetOutput = incheToFeet(156);
-console.log(feetOutput);
+const cTofOutput = cTof(98);
+console.log(cTofOutput);
+
+function fToC(celsius){
+    let fahrenhiet = celsius * 9 / 5 + 32;
+    return fahrenhiet;
+}
+const ftoCOutput = fToC(36.66666667);
+console.log(ftoCOutput);
