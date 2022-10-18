@@ -51,16 +51,27 @@
 
 // ##fahrenheit to celsius program
 
-function cTof(fahrenhiet){
-    let celsius = (5/9) * (fahrenhiet - 32);
-    return celsius;
-}
-const cTofOutput = cTof(98);
-console.log(cTofOutput);
+// function cTof(fahrenhiet){
+//     let celsius = (5/9) * (fahrenhiet - 32);
+//     return celsius;
+// }
+// const cTofOutput = cTof(98);
+// console.log(cTofOutput);
 
-function fToC(celsius){
-    let fahrenhiet = celsius * 9 / 5 + 32;
-    return fahrenhiet;
+// function fToC(celsius){
+//     let fahrenhiet = celsius * 9 / 5 + 32;
+//     return fahrenhiet;
+// }
+// const ftoCOutput = fToC(36.66666667);
+// console.log(ftoCOutput);
+
+
+// ##factorial 
+function factorial(number){
+    let fact = 1;
+    for(let i = 1; i <=number; i++){
+        fact = fact * i;
+    }
+    console.log(fact);
 }
-const ftoCOutput = fToC(36.66666667);
-console.log(ftoCOutput);
+const factOutput = factorial(6);
