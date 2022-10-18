@@ -67,6 +67,8 @@
 
 
 // // ##factorial number
+// 4! = 1 * 2 * 3 * 4
+// 5! = 1 * 2 * 3 * 4 * 5
 // function factorial(number){
 //     let fact = 1;
 //     for(let i = 1; i <=number; i++){
@@ -79,13 +81,31 @@
 
 // ##leap Year
 
-function leapyear(year) {
-    for (let i = 1; i <= year; i++) {
-        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
-            return 'leap Year';
-        }
-        return 'Not Leap Year';
+// function leapyear(year) {
+//     for (let i = 1; i <= year; i++) {
+//         if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+//             return 'leap Year';
+//         }
+//         return 'Not Leap Year';
+//     }
+// }
+// const leapyearOutput = leapyear(2100);
+// console.log(leapyearOutput);
+
+
+// ## fibonacci series
+// 3th = 2th + 1th;
+// 4th = 3th + 2th;
+// nth = (n-1)th + (n-2);
+function fibonacciSeries(number) {
+    let fibo = [0, 1];
+    for (let i = 2; i <= number; i++) {
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+        console.log(fibo[i]);
     }
+    
+
 }
-const leapyearOutput = leapyear(2100);
-console.log(leapyearOutput);
+const fiboOutput = fibonacciSeries(10);
+// console.log(fiboOutput)
+
