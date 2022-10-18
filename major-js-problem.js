@@ -202,3 +202,21 @@ function removeDublicateItem(numbers){
 const removeItem = removeDublicateItem(age);
 console.log(removeItem);
 
+// ## wood-calculator 
+// Wood calculator
+// chair = 3cft
+// table = 10cft
+// bed = 50cft
+function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
+    const perwoodchair = 3;
+    const tablewoodchair = 10;
+    const bedwoodchair = 50;
+    const chairWoodQuantity = chairQuantity * perwoodchair;
+    const tablewoodQuantity = tableQuantity * tablewoodchair;
+    const bedwoodQuantity = bedQuantity * bedwoodchair;
+    const totalwood = chairWoodQuantity + tablewoodQuantity + bedwoodQuantity;
+    return totalwood;
+
+}
+const output = woodCalculator(1,2,5);
+console.log(output);
