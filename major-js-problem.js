@@ -110,7 +110,7 @@
 // // console.log(fiboOutput)
 
 // #use function total array element addition
-const array = [3, 5, 78, 23, 43, 56, 32];
+// const array = [3, 5, 78, 23, 43, 56, 32];
 // function totalArray(numbers){
 //     let sum = 0;
 //     for(const element of numbers){
@@ -126,33 +126,33 @@ const array = [3, 5, 78, 23, 43, 56, 32];
 
 // ##find largest element for an array
 
-function findLargest(numbers) {
-    let largest = numbers[0];
-    for (const element of numbers) {
-        // console.log(element);
-        if (element > largest) {
-            largest = element;
-        }
-    }
-    return largest;
-}
-const largestOutput = findLargest(array);
+// function findLargest(numbers) {
+//     let largest = numbers[0];
+//     for (const element of numbers) {
+//         // console.log(element);
+//         if (element > largest) {
+//             largest = element;
+//         }
+//     }
+//     return largest;
+// }
+// const largestOutput = findLargest(array);
 // console.log(largestOutput);
 
 // # find the largest name in array
-const friendName = ['haniful', 'mor', 'antor', 'raju', 'selim', 'sumon', 'amin', 'ruman'];
-function largestLengthName(names) {
-    let largeName = names[0];
-    for (const element of names) {
-        console.log(element);
-        if (element.length > largeName) {
-            largeName = element.length;
-        }
-    }
-    return largeName;
+// const friendName = ['haniful', 'mor', 'antor', 'raju', 'selim', 'sumon', 'amin', 'ruman'];
+// function largestLengthName(names) {
+//     let largeName = names[0];
+//     for (const element of names) {
+//         console.log(element);
+//         if (element.length > largeName) {
+//             largeName = element.length;
+//         }
+//     }
+//     return largeName;
 
-}
-const largeNameoutput = largestLengthName(friendName);
+// }
+// const largeNameoutput = largestLengthName(friendName);
 // console.log(largeNameoutput);
 
 
@@ -183,24 +183,24 @@ for (var counter = 1; counter <= 100; counter++) {
         }
     }
     if (notPrime === false) {
-        console.log(counter);
+        // console.log(counter);
     }
 }
 
 // ## duplicate item remove to array
-const age = [44, 22, 43, 25, 98, 56, 22, 98, 57];
-function removeDublicateItem(numbers) {
-    let unique = [];
-    for (const element of numbers) {
-        // console.log(element);
-        if (unique.indexOf(element) == -1) {
-            unique.push(element);
-        }
-    }
-    return unique;
-}
-const removeItem = removeDublicateItem(age);
-console.log(removeItem);
+// const age = [44, 22, 43, 25, 98, 56, 22, 98, 57];
+// function removeDublicateItem(numbers) {
+//     let unique = [];
+//     for (const element of numbers) {
+//         // console.log(element);
+//         if (unique.indexOf(element) == -1) {
+//             unique.push(element);
+//         }
+//     }
+//     return unique;
+// }
+// const removeItem = removeDublicateItem(age);
+// console.log(removeItem);
 
 // ## wood-calculator 
 // Wood calculator
@@ -223,15 +223,33 @@ const output = woodCalculator(1, 2, 5);
 
 // ## reverse String program
 
-let haappines = 'How Are You';
-function reverseString(reverse) {
-    let reverseletter = "";
-    for (let i = 0; i < reverse.length; i++) {
-        const element = reverse[i];
-        reverseletter = element + reverseletter;
+// let haappines = 'How Are You';
+// function reverseString(reverse) {
+//     let reverseletter = "";
+//     for (let i = 0; i < reverse.length; i++) {
+//         const element = reverse[i];
+//         reverseletter = element + reverseletter;
 
+//     }
+//     return reverseletter;
+// }
+//  const reverseOutput = reverseString(haappines);
+//  console.log(reverseOutput);
+
+// ## array only even numbers addition program
+
+let arrayNumbers = [44, 22, 43, 25, 98, 56, 22, 98, 57];
+
+function evenNumbers(numbers){
+    let sum = 0;
+    for(let i = 0; i< numbers.length; i++){
+        const element = numbers[i];
+        if( element % 2 == 0){
+            sum = sum + element;
+            continue;
+        }
     }
-    return reverseletter;
+    return sum;
 }
- const reverseOutput = reverseString(haappines);
- console.log(reverseOutput);
+const oddNumberAddOutput = evenNumbers(arrayNumbers);
+console.log(oddNumberAddOutput);
