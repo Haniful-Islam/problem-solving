@@ -66,12 +66,26 @@
 // console.log(ftoCOutput);
 
 
-// ##factorial 
-function factorial(number){
-    let fact = 1;
-    for(let i = 1; i <=number; i++){
-        fact = fact * i;
+// // ##factorial number
+// function factorial(number){
+//     let fact = 1;
+//     for(let i = 1; i <=number; i++){
+//         fact = fact * i;
+//     }
+//     console.log(fact);
+// }
+// const factOutput = factorial(6);
+
+
+// ##leap Year
+
+function leapyear(year) {
+    for (let i = 1; i <= year; i++) {
+        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+            return 'leap Year';
+        }
+        return 'Not Leap Year';
     }
-    console.log(fact);
 }
-const factOutput = factorial(6);
+const leapyearOutput = leapyear(2100);
+console.log(leapyearOutput);
