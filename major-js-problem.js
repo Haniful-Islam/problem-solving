@@ -140,20 +140,20 @@
 // console.log(largestOutput);
 
 // # find the largest name in array
-// const friendName = ['haniful', 'mor', 'antor', 'raju', 'selim', 'sumon', 'amin', 'ruman'];
-// function largestLengthName(names) {
-//     let largeName = names[0];
-//     for (const element of names) {
-//         console.log(element);
-//         if (element.length > largeName) {
-//             largeName = element.length;
-//         }
-//     }
-//     return largeName;
+const friendName = ['mor', 'antor', "ha", 'ShakibAl Hasan', 'selim', 'sumon', 'amin', 'ruman'];
+function largestLengthName(names) {
+    let largeName = names[0];
+    for (const element of names) {
+        // console.log(element);
+        if (element.length < largeName.length) {
+            largeName = element;
+        }
+    }
+    return largeName;
 
-// }
-// const largeNameoutput = largestLengthName(friendName);
-// console.log(largeNameoutput);
+}
+const largeNameoutput = largestLengthName(friendName);
+console.log(largeNameoutput);
 
 
 // divition to the end result 5 = 0, 3 = 0
@@ -240,11 +240,11 @@ const output = woodCalculator(1, 2, 5);
 
 let arrayNumbers = [44, 22, 43, 25, 98, 56, 22, 98, 57];
 
-function evenNumbers(numbers){
+function evenNumbers(numbers) {
     let sum = 0;
-    for(let i = 0; i< numbers.length; i++){
+    for (let i = 0; i < numbers.length; i++) {
         const element = numbers[i];
-        if( element % 2 == 0){
+        if (element % 2 == 0) {
             sum = sum + element;
             continue;
         }
@@ -253,3 +253,47 @@ function evenNumbers(numbers){
 }
 const oddNumberAddOutput = evenNumbers(arrayNumbers);
 console.log(oddNumberAddOutput);
+
+let arr = [];
+for (var p = 2; p <= 100; p++) {
+    for (var i = 2; i < p; i++) {
+        if (p % i == 0) {
+            break;
+        }
+    }
+    if (p == i) {
+        arr.push(p);
+    }
+}
+console.log(arr);
+
+
+// //Prime Number from 1 to 100
+// const arr = []; //Creating an Empty List for keeping all prime numbers
+// for (var p = 2; p <= 100; p++) {
+//     // 1 is not a prime number it is excluded and loop is started with 2 to 100.
+//     for (var i = 2; i < p; i++) {
+//         //2<2 ----->(Which is false program will return to last if)
+//         if (p % i == 0) {
+//             //|
+//             break; //|
+//         } //|
+//     } //|
+//     if (p == i) {
+//         //Here and adds that number <-------------------------=
+//         arr.push(p);
+//     }
+// }
+// console.log(arr)
+
+// ##pattern
+function pattern(numbers){
+    let sum = "";
+    for(let i= 1; i<=numbers; i++){
+        sum = sum + i;
+        console.log(sum)
+    }
+    // return sum;
+}
+const patternOutput = pattern(20);
+// console.log(patternOutput)
