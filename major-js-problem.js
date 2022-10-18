@@ -111,14 +111,46 @@
 
 // #use function total array element addition
 const array = [3,5,78,23,43,56,32];
-function totalArray(numbers){
-    let sum = 0;
-    for(const element of numbers){
-        // console.log(element)
-        sum = sum + element;
-    }
-    return sum;
-}
+// function totalArray(numbers){
+//     let sum = 0;
+//     for(const element of numbers){
+//         // console.log(element)
+//         sum = sum + element;
+//     }
+//     return sum;
+// }
 
-const output = totalArray(array);
-console.log(output);
+// const output = totalArray(array);
+// console.log(output);
+
+
+// ##find largest element for an array
+
+function findLargest(numbers){
+    let largest = numbers[0];
+    for(const element of numbers){
+        // console.log(element);
+        if(element > largest){
+            largest = element;
+        }
+    }
+    return largest;
+}
+const largestOutput = findLargest(array);
+// console.log(largestOutput);
+
+const friendName = ['haniful','mor', 'antor', 'raju', 'selim','sumon','amin','ruman'];
+
+function largestLengthName(names){
+    let largeName = names[0];
+    for(const element of names){
+        // console.log(element);
+        if(element.length > largeName){
+            largeName = element.length
+        }
+    }
+    return largeName;
+
+}
+const largeNameoutput = largestLengthName(friendName);
+console.log(largeNameoutput);
