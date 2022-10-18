@@ -1,5 +1,5 @@
 // prime Number check
-let prime = 101;
+let prime = 31;
 let check = true;
 
 for (let i = 2; i < prime; i++) {
@@ -9,7 +9,7 @@ for (let i = 2; i < prime; i++) {
     }
 }
 if (check) {
-    // console.log("prime")
+    console.log("prime")
 }
 else {
     console.log("not prime")
