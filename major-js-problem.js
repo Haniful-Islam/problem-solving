@@ -31,11 +31,20 @@
 // }
 
 // ##odd and Even number number
-for (let i = 1; i <= 50; i++) {
-    if (i % 2 == 1) {
-        continue;
-    }
-    else {
-        console.log(i);
-    }
+// for (let i = 1; i <= 50; i++) {
+//     if (i % 2 == 1) {
+//         continue;
+//     }
+//     else {
+//         console.log(i);
+//     }
+// }
+
+
+// ##inche to feet
+function incheToFeet(inche) {
+    let feet = inche / 12;
+    return feet;
 }
+const feetOutput = incheToFeet(156);
+console.log(feetOutput);
