@@ -10,7 +10,7 @@
 //     }
 // }
 // const primeOutput = primeNumber(7);
-// // console.log(primeOutput);
+//  console.log(primeOutput);
 
 
 // #alternative way to prime number check
@@ -103,14 +103,14 @@
 //         fibo[i] = fibo[i - 1] + fibo[i - 2];
 //         console.log(fibo[i]);
 //     }
-    
+
 
 // }
 // const fiboOutput = fibonacciSeries(10);
 // // console.log(fiboOutput)
 
 // #use function total array element addition
-const array = [3,5,78,23,43,56,32];
+const array = [3, 5, 78, 23, 43, 56, 32];
 // function totalArray(numbers){
 //     let sum = 0;
 //     for(const element of numbers){
@@ -126,11 +126,11 @@ const array = [3,5,78,23,43,56,32];
 
 // ##find largest element for an array
 
-function findLargest(numbers){
+function findLargest(numbers) {
     let largest = numbers[0];
-    for(const element of numbers){
+    for (const element of numbers) {
         // console.log(element);
-        if(element > largest){
+        if (element > largest) {
             largest = element;
         }
     }
@@ -139,18 +139,66 @@ function findLargest(numbers){
 const largestOutput = findLargest(array);
 // console.log(largestOutput);
 
-const friendName = ['haniful','mor', 'antor', 'raju', 'selim','sumon','amin','ruman'];
-
-function largestLengthName(names){
+// # find the largest name in array
+const friendName = ['haniful', 'mor', 'antor', 'raju', 'selim', 'sumon', 'amin', 'ruman'];
+function largestLengthName(names) {
     let largeName = names[0];
-    for(const element of names){
-        // console.log(element);
-        if(element.length > largeName){
-            largeName = element.length
+    for (const element of names) {
+        console.log(element);
+        if (element.length > largeName) {
+            largeName = element.length;
         }
     }
     return largeName;
 
 }
 const largeNameoutput = largestLengthName(friendName);
-console.log(largeNameoutput);
+// console.log(largeNameoutput);
+
+
+// divition to the end result 5 = 0, 3 = 0
+// let sum = 0;
+// for (let i = 1; i <= 50; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//         console.log('foo bar');
+//     }
+//     else if (i % 3 == 0) {
+//         console.log('foo');
+//     }
+//     else if (i % 5 == 0) {
+//         console.log('bar');
+//     }
+//     else {
+//         console.log(i);
+//     }
+// }
+
+// ## 1-100 up to prime numbers program
+for (var counter = 1; counter <= 100; counter++) {
+
+    var notPrime = false;
+    for (var i = 2; i <= counter; i++) {
+        if (counter % i === 0 && i !== counter) {
+            notPrime = true;
+        }
+    }
+    if (notPrime === false) {
+        console.log(counter);
+    }
+}
+
+// ## duplicate item remove to array
+const age = [44,22,43,25,98,56,22,98,57];
+function removeDublicateItem(numbers){
+    let unique = [];
+    for(const element of numbers){
+        // console.log(element);
+        if(unique.indexOf(element) == -1){
+            unique.push(element);
+        }
+    }
+    return unique;
+}
+const removeItem = removeDublicateItem(age);
+console.log(removeItem);
+
